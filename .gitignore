@@ -1,2 +1,8 @@
 
 target/
+
+.idea/
+
+demo.iml
+
+.DS_Store

@@ -6,6 +6,9 @@ import javax.persistence.Id;
 
 import lombok.Data;
 import org.hibernate.annotations.NaturalId;
+import org.springframework.content.commons.annotations.ContentId;
+import org.springframework.content.commons.annotations.ContentLength;
+import org.springframework.content.commons.annotations.MimeType;
 
 /**
  * @author <a href="mailto:davidm@yambay.com">David MacDonald</a>
@@ -22,5 +25,14 @@ class User {
     private String userName;
 
     private String fullName;
+
+    @ContentId
+    private String contentId;
+
+    @ContentLength
+    private long contentLength;
+
+    @MimeType
+    private String mimeType;
 
 }
